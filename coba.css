@@ -1,0 +1,612 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+/*pengaturan seluruh body */
+body {
+    background-color: #F8F4EC;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Top : Header */
+.headerNav {
+    max-width: 2000px;
+    width: 100%;
+    background-color: #FCC0C5;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.headerNav .navLogo img {
+    width: 70px;
+}
+
+.navBar{
+    margin: 10px;
+}
+
+.headerNav .navBar .navBarUl {
+    padding-left: 0;
+    display: flex;
+    gap: 30px;
+    justify-content: space-around;
+}
+
+.headerNav .navBar .navBarUl li {
+    list-style-type: none;
+}
+
+.headerNav .navBar .navBarUl li a {
+    background-color: #F8F4EC;
+    text-decoration: none;
+    color: black;
+    padding: .5rem 1.5rem;
+    border-radius: 999px;
+    transition: all 0.3s ease-in-out;
+}
+
+.headerNav .navBar .navBarUl li a:hover {
+    color: black;
+    background-color: #E6A4B4;
+}
+
+
+/* Pengaturan seluruh Main */
+.mainContent {
+    background-color: #F8F4EC;
+    /* overflow-x: hidden; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 1000px;
+}
+
+/* Pengaturan seluruh Main */
+
+/* top banner styling */
+.bannerContainer {
+    max-width: 900px;
+    margin: 10px;
+}
+
+.banner {
+    width: 100%;
+    position: relative;
+}
+
+.banner .bannerImage {
+    display: none;
+}
+
+.banner .bannerImage img {
+    box-shadow: 2px 5px 20px grey;
+    width: 100%;
+    max-height: 400px;
+    border-radius: 20px;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+.banner .bannerNav {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.banner .bannerNav .prev,
+.banner .bannerNav .next {
+    cursor: pointer;
+    padding: 16px;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    background: rgba(0, 0, 0, 0.2);
+    user-select: none;
+    transition: 0.6s ease;
+}
+
+.banner .bannerNav .prev:hover,
+.banner .bannerNav .next:hover {
+    background: rgba(0, 0, 0, 1);
+}
+
+/* Bot Banner Styling */
+
+/* Top Card Styling */
+.CardContainer {
+    width: 900px;
+    padding: 10px;
+}
+
+.CardNav {
+    background-color: #FCC0C5;
+    box-shadow: 2px 5px 20px grey;
+    border: 2px solid transparent;
+    display: flex;
+    justify-content: center;
+    padding: .5rem 1.5rem;
+    border-radius: 999px;
+}
+
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+    padding-block: 20px;
+    gap: 40px;
+}
+
+.cardFrame {
+    background-color: rgb(228, 172, 172);
+    box-shadow: 2px 5px 20px grey;
+    width: 180px;
+    height: 240px;
+    border-radius: 20px;
+    gap: 20px;
+}
+
+.cardFrame a {
+    text-decoration: none;
+}
+
+.cardContent {
+    max-width: 210px;
+    border: 1px solid black;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    transition: 0.2s linear;
+    color: black;
+}
+
+.cardContent:hover {
+    transform: scale(1.1);
+}
+
+.imageProduct {
+    max-width: 100%;
+}
+
+.imageProduct img {
+    width: 100%;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.imageProduct .wordContent {
+    margin: 0px;
+}
+
+.imageProduct span {
+    background-color: rgb(228, 172, 172);
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.contentProduct {
+    background-color: khaki;
+    height: 38px;
+    border-radius: 0 0 20px 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contentProduct .pricePromo {
+    list-style-type: none;
+    padding: 0 10px;
+    margin: 0;
+}
+
+.contentProduct .pricePromo .price {
+    text-decoration: line-through;
+    color: grey;
+}
+
+.contentProduct .pricePromo .promo {
+    text-align: center;
+}
+
+.contentProduct .contentContainer {
+    margin: 0;
+    padding: 10px 0px;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contentProduct .contentContainer .name {
+    padding: 5px 5px;
+}
+
+.contentProduct .contentContainer .price {
+    padding: 5px 5px;
+}
+
+.allProduk {
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: flex-end;
+    /* padding-bottom: 20px; */
+}
+
+.allProduk a {
+    background-color: #FCC0C5;
+    box-shadow: 2px 5px 20px grey;
+    text-decoration: none;
+    border-radius: 99px;
+    color: black;
+    transition: all 0.3s ease-in-out;
+}
+
+.allProduk a:hover {
+    background-color: #E6A4B4;
+    color: white;
+}
+
+.allProduk p {
+    border: solid 1px transparent;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+/* Style untuk pop up */
+.modal {
+    display: none;
+    /* Sembunyikan modal secara default */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    max-width: 80%;
+    max-height: 80%;
+}
+
+.close {
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Bot Card Styling */
+
+/* Top Aside Styling */
+.orderHere {
+    /* background-color: #bbb; */
+    position: fixed;
+    inset-block: 0;
+    inset-inline-end: 0;
+}
+
+.orderContainer {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.orderWord {
+    background-color: #FCC0C5;
+    box-shadow: 2px 5px 20px;
+    border-radius: 30px 0 0 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.orderWord a {
+    text-decoration: none;
+    transition: all .1s ease-in-out;
+    color: black;
+}
+
+.orderWord a:hover {
+    border-radius: 30px 0 0 30px;
+    padding: 0.5rem 1rem 0.5rem;
+    background-color: #E6A4B4;
+    transition: all 0.3 ease-in-out;
+    color: white;
+}
+
+.order {
+    padding: 0.5rem 1rem 0;
+}
+
+.here {
+    padding: 0.5rem 1rem 0.5rem;
+}
+
+.order,
+.here {
+    list-style-type: none;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.order li a,
+.here li a {
+    color: black;
+}
+
+.order .i,
+.here .i {
+    padding: 0 2px;
+}
+
+/* Bot Aside Styling */
+
+/* Top Footer Styling */
+
+.footerNav {
+    margin: 0;
+    width: 100%;
+    background-color: #FCC0C5;
+}
+
+.footerNav .copyright {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: medium;
+    font-family: sans-serif;
+}
+
+.copyrightWord {
+}
+
+.footerNav .copyright .Socmed {
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    padding-block: 20px;
+    max-width: 400px;
+    width: 100%;
+}
+
+.footerNav .copyright .Socmed .socmedWord {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    padding-right: 0;
+}
+
+.footerNav .copyright .Socmed .socmedIcon {
+    max-width: 180px;
+    display: flex;
+    gap: 10px;
+    padding-block: 10px;
+}
+
+.footerNav .copyright .Socmed .socmedIcon img {
+    width: 30px;
+    height: auto;
+    transition: transform 0.3s;
+}
+
+.footerNav .copyright .Socmed .socmedIcon .icon img:hover {
+    transform: scale(1.5)
+}
+
+/* Bot Footer Styling */
+
+@keyframes fade {
+    from {
+        opacity: 0.3
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    body {
+        width: 100%;
+    }
+
+    .mainContent {
+        width: 100%;
+    }
+
+    .banner .bannerNav .prev,
+    .banner .bannerNav .next {
+        font-size: 18px;
+        padding: 13px;
+    }
+
+}
+
+@media screen and (max-width: 950px) {
+    .bannerContainer {
+        max-width: 700px;
+    }
+
+    .CardContainer {
+        max-width: 800px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .banner .bannerNav .prev,
+    .banner .bannerNav .next {
+      font-size: 15px;
+      padding: 10px;
+    }
+
+    .bannerContainer {
+        max-width: 600px;
+    }
+
+    .CardContainer {
+        max-width: 700px;
+    }
+
+    .cardFrame {
+        max-width: 150px;
+        max-height: 210px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .bannerContainer {
+        max-width: 500px;
+    }
+
+    .CardContainer {
+        max-width: 600px;
+    }
+
+    .copyright {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .Socmed {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .bannerContainer {
+        max-width: 450px;
+    }
+
+    .CardContainer {
+        max-width: 550px;
+    }
+
+}
+
+@media screen and (max-width: 650px) {
+    .headerNav {
+        flex-wrap: wrap;
+    }
+
+    .bannerContainer {
+        max-width: 400px;
+    }
+
+    .CardContainer {
+        max-width: 500px;
+    }
+
+    .orderWord {
+        max-width: 35px;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+    .banner .bannerNav .prev,
+    .banner .bannerNav .next {
+      font-size: 12px;
+      padding: 7px;
+    }
+
+    .bannerContainer {
+        max-width: 350px;
+    }
+
+    .CardContainer {
+        max-width: 450px;
+    }
+
+}
+
+@media screen and (max-width: 450px) {  
+
+    .navBar {
+        flex-wrap: wrap;
+    }
+
+    .bannerContainer {
+        max-width: 300px;
+    }
+
+    .CardContainer {
+        max-width: 400px;
+    }
+
+    .cardFrame {
+        max-width: 130px;
+        max-height: 190px;
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+    .bannerContainer {
+        max-width: 250px;
+    }
+
+    .CardContainer {
+        max-width: 350px;
+    }
+
+    .cardFrame {
+        max-width: 110px;
+        max-height: 170px;
+    }
+
+}
+
+@media screen and (max-width: 350px) {
+    .navBarUl{
+        flex-wrap: wrap;
+    }
+
+    .banner .bannerNav .prev,
+    .banner .bannerNav .next {
+      font-size: 11px;
+      padding: 6px;
+    }
+
+    .bannerContainer {
+        max-width: 230px;
+    }
+
+    .CardContainer {
+        max-width: 330px;
+    }
+
+}

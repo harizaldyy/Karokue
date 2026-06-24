@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karokue.com</title>
+    <link rel="icon" href="faveicon" type="image/x-icon">
+    <link rel="stylesheet" href="Style/index.css">
+    <link rel="stylesheet" href="Style/Responsive.css">
+</head>
+
+<body>
+    <header class="headerNav">
+        <div class="navLogo">
+            <img src="Assets/Logo/logo.png" alt="Karokue Logo"  >
+        </div>
+        <nav class="navBar">
+            <ul class="navBarUl">
+                <li><a href="#Rekomendasi">Rekomendasi</a></li>
+                <li><a href="#AllProduk">All Produk</a></li>
+                <!-- <li><a href="Paket.html">Paket</a></li> -->
+            </ul>   
+        </nav>
+    </header>
+
+    <main class="mainContent">
+        <!-- Banner Section -->
+        <div class="bannerContainer">
+            <div class="banner">
+                <div class="bannerImage">
+                    <img src="\Assets\Banner\Banner1.png" alt="banner1">
+                </div>
+                <div class="bannerImage">
+                    <img src="\Assets\Banner\Banner2.png" alt="banner2">
+                </div>
+                <div class="bannerImage">
+                    <img src="\Assets\Banner\Banner3.png" alt="banner3">
+                </div>
+                <div class="bannerImage">
+                    <img src="\Assets\Banner\Banner4.png" alt="banner4">
+                </div>
+                <div class="bannerImage">
+                    <img src="\Assets\Banner\Banner5.png" alt="banner5">
+                </div>
+                <div class="bannerImage">
+                    <img src="\Assets\Banner\Banner6.png" alt="banner6">
+                </div>
+                <div class="bannerNav">
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(+1)">&#10095;</a>
+                </div>
+            </div>
+        </div>
+        <!-- Banner Section -->
+
+        <!-- Recommendation Section -->
+        <div class="CardContainer" id="Rekomendasi">
+            <div class="CardNav">
+                <div>Paket Hampers</div>
+            </div>
+            <div class="card">
+                <div class="cardFrame" onclick="openModal('/Assets/Produk/13.png')">
+                    <a href="#">
+                        <div class="cardContent">
+                            <div class="imageProduct">
+                                    <img src="\Assets\Produk\13.png" alt="Nastar">
+                                <span class="wordContent">Hampers 1 Toples</span>
+                            </div>
+                            <div class="contentProduct">
+                                <ul class="pricePromo">
+                                    <li class="price">Rp 50.000,-</li>
+                                    <li class="promo">Rp 41.000,-</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="cardFrame" onclick="openModal('/Assets/Produk/14.png')">
+                    <a href="#">
+                        <div class="cardContent">
+                            <div class="imageProduct">
+                                    <img src="\Assets\Produk\14.png" alt="Cookies Kacang">
+                                <span class="wordContent">Hampers 2 toples</span>
+                            </div>
+                            <div class="contentProduct">
+                                <ul class="pricePromo">
+                                    <li class="price">Rp 100.000,-</li>
+                                    <li class="promo">Rp 81.000,-</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="cardFrame" onclick="openModal('/Assets/Produk/14.png')">
+                    <a href="#">
+                        <div class="cardContent">
+                            <div class="imageProduct">
+                                    <img src="\Assets\Produk\14.png" alt="Putri Salju Keju">
+                                <span class="wordContent">Hampers 3 Toples</span>
+                            </div>
+                            <div class="contentProduct">
+                                <ul class="pricePromo">
+                                    <li class="price">Rp 150.000,-</li>
+                                    <li class="promo">Rp 122.000,-</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <!-- <div class="allProduk">
+                <a href="Produk.html">
+                    <p>Lihat Semua Produk</p>
+                </a>
+            </div> -->
+        </div>
+        <!-- Recommendation Section -->
+
+        <!-- All Product Section -->
+        <div class="CardContainer" id="AllProduk">
+            <div class="CardNav">
+                <div>Semua Produk</div>
+            </div>
+            <div class="card">
+                <div class="cardFrame" onclick="openModal('/Assets/Produk/1.png')">
+                    <a href="#">
+                        <div class="cardContent">
+                            <div class="imageProduct">
+                                    <img src="\Assets\Produk\1b.png" alt="Nastar">
+                                <span class="wordContent">Nastar</span>
+                            </div>
+                            <div class="contentProduct">
+                                <ul class="pricePromo">
+                                    <li class="price">Rp 45.000,-</li>
+                                    <li class="promo">Rp 38.000,-</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="cardFrame" onclick="openModal('/Assets/Produk/10.png')">
+                    <a href="#">
+                        <div class="cardContent">
+                            <div class="imageProduct">
+                                    <img src="\Assets\Produk\10b.png" alt="Brownies Crispy">
+                                <span class="wordContent">Brownies Crispy</span>
+                            </div>
+                            <div class="contentProduct">
+                                <ul class="pricePromo">
+                                    <li class="price">Rp 40.000,-</li>
+                                    <li class="promo">Rp 38.000,-</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="cardFrame" onclick="openModal('/Assets/Produk/6.png')">
+                    <a href="#">
+                        <div class="cardContent">
+                            <div class="imageProduct">
+                                    <img src="\Assets\Produk\6.png" alt="Sagu Keju">
+                                <span class="wordContent">Sagu Keju</span>
+                            </div>
+                            <div class="contentProduct">
+                                <ul class="pricePromo">
+                                    <li class="price">Rp 42.000,-</li>
+                                    <li class="promo">Rp 38.000,-</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="cardFrame" onclick="openModal('/Assets/Produk/3.png')">
+                    <a href="#">
+                        <div class="cardContent">
+                            <div class="imageProduct">
+                                    <img src="\Assets\Produk\3.png" alt="Kastengel">
+                                <span class="wordContent">Kastengel</span>
+                            </div>
+                            <div class="contentProduct">
+                                <ul class="pricePromo">
+                                    <li class="price">Rp 45.000,-</li>
+                                    <li class="promo">Rp 38.000,-</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="cardFrame" onclick="openModal('/Assets/Produk/8.png')">
+                    <a href="#">
+                        <div class="cardContent">
+                            <div class="imageProduct">
+                                    <img src="\Assets\Produk\8.png" alt="Putri Salju Keju">
+                                <span class="wordContent">Putri Salju Keju</span>
+                            </div>
+                            <div class="contentProduct">
+                                <ul class="pricePromo">
+                                    <li class="price">Rp 42.000,-</li>
+                                    <li class="promo">Rp 38.000,-</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="cardFrame" onclick="openModal('/Assets/Produk/9.png')">
+                    <a href="#">
+                        <div class="cardContent">
+                            <div class="imageProduct">
+                                    <img src="\Assets\Produk\9.png" alt="Putri Salju Milo">
+                                <span class="wordContent">Putri Salju Milo</span>
+                            </div>
+                            <div class="contentProduct">
+                                <ul class="pricePromo">
+                                    <li class="price">Rp 42.000,-</li>
+                                    <li class="promo">Rp 38.000,-</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="cardFrame" onclick="openModal('/Assets/Produk/4.png')">
+                    <a href="#">
+                        <div class="cardContent">
+                            <div class="imageProduct">
+                                    <img src="\Assets\Produk\4b.png" alt="Cookies Kacang">
+                                <span class="wordContent">Cookies Kacang</span>
+                            </div>
+                            <div class="contentProduct">
+                                <ul class="pricePromo">
+                                    <li class="price">Rp 40.000,-</li>
+                                    <li class="promo">Rp 38.000,-</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="cardFrame" onclick="openModal('/Assets/Produk/7.png')">
+                    <a href="#">
+                        <div class="cardContent">
+                            <div class="imageProduct">
+                                    <img src="\Assets\Produk\7.png" alt="Cookies Bawang">
+                                <span class="wordContent">Cookies Bawang</span>
+                            </div>
+                            <div class="contentProduct">
+                                <ul class="pricePromo">
+                                    <li class="price">Rp 40.000,-</li>
+                                    <li class="promo">Rp 38.000,-</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="cardFrame" onclick="openModal('/Assets/Produk/2.png')">
+                    <a href="#">
+                        <div class="cardContent">
+                            <div class="imageProduct">
+                                    <img src="\Assets\Produk\2.png" alt="Palm Cheese">
+                                <span class="wordContent">Palm Cheese</span>
+                            </div>
+                            <div class="contentProduct">
+                                <ul class="pricePromo">
+                                    <li class="price">Rp 43.000,-</li>
+                                    <li class="promo">Rp 38.000,-</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <!-- <div class="allProduk">
+                <a href="Produk.html">
+                    <p>Lihat Semua Produk</p>
+                </a>
+            </div> -->
+        </div>
+        <!-- All Product Section -->
+
+        <!-- Aside Section -->
+        <aside class="orderHere">
+            <div class="orderContainer">
+                <div class="orderWord">
+                    <a href="https://wa.me/6281293847083" target="_blank">
+                        <ul class="order">
+                            <li>O</li>
+                            <li>R</li>
+                            <li>D</li>
+                            <li>E</li>
+                            <li>R</li>
+                        </ul>
+                        <ul class="here">
+                            <li>D</li>
+                            <li class="i">I</li>
+                            <li>S</li>
+                            <li class="i">I</li>
+                            <li>N</li>
+                            <li class="i">I</li>
+                        </ul>    
+                    </a>
+                 </div>
+            </div>
+        </aside>
+        <!-- Aside Section -->
+
+        <!-- Modal Section -->
+        <div id="myModal" class="modal">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img class="modal-content" id="modalImg">
+        </div>
+        <!-- Modal Section -->
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="footerNav">
+        <div class="copyright">
+            <div class="copyrightWord">
+                <p>Hak Cipta &copy;2023 Karokue. Hak Cipta Dilindungi.</p>
+            </div>
+            <div class="Socmed">
+                <div class="socmedWord">
+                    <p>Check Our Sosial Media :</p>
+                </div>
+                <div class="socmedIcon">
+                    <div class="icon">
+                        <a href="https://www.instagram.com/karokue_" target="_blank">
+                            <img src="Assets\Icon\instagram.png" alt="Instagram">
+                        </a>
+                    </div>
+                    <div class="icon">
+                        <a href="https://www.tiktok.com/@karokue" target="_blank">
+                            <img src="Assets\Icon\tiktok.png" alt="Tiktok">
+                        </a>
+                    </div>
+                    <div class="icon">
+                        <a href="https://wa.me/6281293847083" target="_blank">
+                            <img src="Assets\Icon\whatsapp.png" alt="Whatsapp">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Section -->
+
+    <!-- Function -->
+    <script src="Function\Carousel.js"></script>
+    <script src="Function\Popup.js"></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-H7FKVCNCBP"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-H7FKVCNCBP');
+    </script>
+    <!-- Google tag (gtag.js) -->
+    <!-- Function -->
+</body>
+
+</html>
